@@ -1,0 +1,16 @@
+version: "2"
+services:
+  nginx:
+    image: registry.cn-hangzhou.aliyuncs.com/springboot-xjl/frps
+    container_name: frp
+    restart: always
+    ports:
+      - "8088:80"
+      - "4443:443"
+      - "6000:6000"
+      - "7000:7000"
+      - "7500:7500"
+    logging:
+        driver: "json-file"
+        options:
+          max-size: "1k"
