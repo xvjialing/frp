@@ -5,11 +5,7 @@ services:
     container_name: frp
     restart: always
     ports:
-      - "8088:80"
-      - "4443:443"
-      - "6000:6000"
-      - "7000:7000"
-      - "7500:7500"
+      - "8088:8088"
     logging:
         driver: "json-file"
         options:
