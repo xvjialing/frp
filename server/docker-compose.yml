@@ -6,6 +6,10 @@ services:
     restart: always
     ports:
       - "8088:8088"
+      - "4443:4443"
+      - "6000:6000"
+      - "7000:7000"
+      - "7500:7500"
     logging:
         driver: "json-file"
         options:
